@@ -8,24 +8,45 @@ body{
 /* Footer Styles */
 footer p{
     margin:0;
-    background-color: black;
+}
+
+/* Hero Section */
+.carousel-item{
+    max-height: 25rem;
+}
+
+/* About section */
+#about-section{
+    min-height: 75vh; 
+    background-color: linear-gradient(to right, #950e1c, #ebbb19);
+}
+/* Validation Section */
+#verification-section{
+    background-image: url("../images/dots.png");
+    background-size: cover;
 }
 
 /* Contact Section */
 #contact-section{
     /* background-image: url("../images/contact-background1.png"); */
+    display: block;
     background-size: cover;
-    background: linear-gradient(to right,#f3df4c, #1ad5cf 65%);
+    background: linear-gradient(to right, #1ad5cf, #f3df4c 65%);
+    min-height: 95vh;
 }
+
+/* Validation Section  */
 
 #contact-title{
     font-size: 3rem;
 }
 
 #university-locator-section{
-    background-color: black;
+    min-height: 89vh;
 }
-
+.display-4{
+    font-size: 2.5rem;;
+}
 .row{
     margin:0;
     padding:0;
