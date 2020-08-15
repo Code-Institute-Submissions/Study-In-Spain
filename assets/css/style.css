@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-height: 100%
+}
+
+/* Footer Styles */
+footer p{
+    margin:0;
+    background-color: black;
+}
+
+/* Contact Section */
+#contact-section{
+    /* background-image: url("../images/contact-background1.png"); */
+    background-size: cover;
+    background: linear-gradient(to right,#f3df4c, #1ad5cf 65%);
+}
+
+#contact-title{
+    font-size: 3rem;
+}
+
+#university-locator-section{
+    background-color: black;
+}
+
+.row{
+    margin:0;
+    padding:0;
+    border:0;
+}
