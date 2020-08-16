@@ -5,6 +5,10 @@ body{
     min-height: 100%
 }
 
+.navbar-light{
+    background-color: white;
+}
+
 /* Footer Styles */
 footer p{
     margin:0;
@@ -14,12 +18,48 @@ footer p{
 .carousel-item{
     max-height: 25rem;
 }
+#what-to-section{
+    min-height: 75vh;
+}
 
 /* About section */
 #about-section{
     min-height: 75vh; 
     background-color: linear-gradient(to right, #950e1c, #ebbb19);
 }
+
+#carouselExampleCaptions{
+    max-height: 30rem;
+}
+
+.card{
+    width: 100%;
+}
+
+.card-container{
+    width: 25rem;
+    
+}
+
+.card-img-top{
+min-height: 10rem;
+max-height: 10rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+#university-locator-section p {
+    margin:0;
+    border: 0;
+    padding: 0;
+}
+
+#university-locator-section h2{
+margin:0;
+}
+
 /* Validation Section */
 #verification-section{
     background-image: url("../images/dots.png");
@@ -51,4 +91,24 @@ footer p{
     margin:0;
     padding:0;
     border:0;
+}
+
+.country-flag{
+    height: 3rem;
+    width: 5rem;
+}
+
+.country{
+    border-style: none;
+    border-radius: 5%;
+    position: relative;
+    height: 10rem;
+}
+
+.country:hover{
+    background-color: #0099b2;
+    color: white;
+}
+#countries-container{
+    
 }
