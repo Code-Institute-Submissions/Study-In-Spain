@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width, initial-scale=1.0">
+        <!-- Styles -->
+        <!-- Adding Bootstrap to the project -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Adding Personal Styles to the project -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Requirements - Study In Spain</title>
+    </head>
+    <body>
+        <header>
+            <!-- Bootstrap´s Navbar Template -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <a class="navbar-brand" href="#">Study in Spain</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="index.html#about-section">Why Study</a>
+                    <a class="nav-link" href="index.html#what-to-section">What to Study</a>
+                    <a class="nav-link" href="requirements.html" target="_blank">Requirements</a>
+                    <a class="nav-link" href="index.html#university-locator-section">Universities</a>
+                    <a class="nav-link" href="index.html#contact-section">Contact</a>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h1 class="text-center display-3">Requirements</h1>
+           <section class="requirements-section">
+               <h2 class="text-center display-4">Select Your Country</h2>
+               <p class="text-center">Requirements may change by country, please select a country to know specific requirements</p>
+               <div class="form-group col-md-6 mx-auto">
+                   <input type="text" name="country-selector" id="country-selector" class="form-control form-block">
+                   <button type="submmit" id="search-country" class="btn btn-danger mt-1 d-flex mx-auto">Search Country</button>
+               </div>
+           </section>
+           <section class="requirements-section">
+               <div id="countries-container" class="d-flex align-content-around flex-wrap">
+                   
+               </div>
+               <!-- Modal Bootstrap Template -->
+               <div class="modal fade" id="validator-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="m4">
+                      You are going to be redirected to our requirements validation page
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger">Get me there!</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+               
+           </section>
+           <section>
+            <h2 class="text-center display-4">Select an University</h2>
+            <p class="text-center">Each University may have especific requirement, please select an University to know its admission requirements</p>
+            <br>
+            <p id="error-notification"></p>
+           </section> 
+        </main>
+        <footer class="text-center bg-light">
+            <div class="">
+                <p>Developed by Harving Zúniga</p>
+                <p>2020</p>
+            </div>
+        </footer>
+        <!-- Adding Scripts  -->
+        <!-- jQuery Script -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <!-- Bootstrap Script -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!-- Project Custom Script -->
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
