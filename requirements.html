@@ -30,14 +30,11 @@
             </nav>
         </header>
         <main>
-            <h1 class="text-center display-3">Requirements</h1>
+            <h1 class="text-center display-3 mb-5">Requirements</h1>
+            
            <section class="requirements-section">
                <h2 class="text-center display-4">Select Your Country</h2>
                <p class="text-center">Requirements may change by country, please select a country to know specific requirements</p>
-               <div class="form-group col-md-6 mx-auto">
-                   <input type="text" name="country-selector" id="country-selector" class="form-control form-block">
-                   <button type="submmit" id="search-country" class="btn btn-danger mt-1 d-flex mx-auto">Search Country</button>
-               </div>
            </section>
            <section class="requirements-section">
                <div id="countries-container" class="d-flex align-content-around flex-wrap">
@@ -45,7 +42,7 @@
                </div>
                <!-- Modal Bootstrap Template -->
                <div class="modal fade" id="validator-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                   <div id="modal-validator-content" class="modal-content">
                     
                   </div>
