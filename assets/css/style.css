@@ -122,3 +122,7 @@ margin:0;
     padding : 0;
     border:0;
 }
+
+#map {
+    min-height: 360px;
+}
