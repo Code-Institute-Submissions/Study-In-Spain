@@ -9,151 +9,170 @@
         <!-- Adding Personal Styles to the project -->
         <link rel="stylesheet" href="./assets/css/style.css">
         <!-- Adding EmailJS -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-        <script type="text/javascript">
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <script>
         (function(){
             emailjs.init("user_7yFD4CIEwOv4SbZYl3FfL");
-        })();
+            })();
         </script>
         <title>Study In Spain</title>
     </head>
     <body>
         <header>
             <!-- Bootstrap´s Navbar Template -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+                <!-- Logo section -->
                 <a class="navbar-brand" href="#">
                     <div class="d-flex align-middle">
                         <img src="./assets/images/spainlogo.png" alt="logo-spain" class="logo-img">
                         <h1 class="ml-1 display-3">Study in Spain</h1>
                     </div> 
                 </a>
+                
+                <!-- Toggle Button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- Navigation bar -->
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav ml-auto">
-                    <a class="nav-link" href="#about-section">Why study</a>
-                    <a class="nav-link" href="#what-to-section">What to Study</a>
-                    <a class="nav-link" href="./requirements.html" target="_blank">Requirements</a>
-                    <a class="nav-link" href="#university-locator-section">Universities</a>
-                    <a class="nav-link" href="#contact-section">Contact</a>
-                  </div>
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link" href="#about-section">Why Study</a>
+                        <a class="nav-link" href="#what-to-section">What to Study</a>
+                        <a class="nav-link" href="./requirements.html" target="_blank">Requirements</a>
+                        <a class="nav-link" href="#university-locator-section">Universities</a>
+                        <a class="nav-link" href="#contact-section">Contact</a>
+                    </div>
                 </div>
             </nav>
         </header>
-        <main>
-            <section id="hero-section" class="mt-5">
-                <div class="container mt-5">
-                    <div class="row"></div>
-                    
+        <!-- Main Section -->
+        <main class="pt-4">
+
+            <!-- Slider Section -->
+            <section id="hero-section" class="mt-5 pt-5"> 
+                <!-- Slider Image -->
+                <div class="hero-img-container container-fluid">
+                    <img id="hero-img" src="./" alt="">
+                </div>
+                
+                <!-- Slider Title and Button -->
+                <div id="hero-info" class="pt-4">
+                    <h2 class="display-2 text-center" id="hero-title"> ""</h2>
+                    <a class="btn btn-danger d-flex col-3 mx-auto" id="hero-cta" href="" target="_blank">Read More</a>
                 </div>
             </section>
-            <section id="about-section">
-                <div class="container">
-                    <div class="row mt-5">
-                    <div class="row"></div>
-                    <div class="my-4">
-                        <h2 class="text-center display-4">Why study in Spain?</h2>
-                        <div class="mt-3">
-                            <p class="text-justify">Studying in Spain is ideal for many people, mainly because it is part of an academic destination par excellence. For many Latin Americans, it is a unique and quite beneficial opportunity for cultural learning and also for the social integration and academic success of those who study in this country.</p>
-                            <p class="text-justify">Studying in this European country is a great advantage that can mainly be summarized in the following various points, such as the fact that in this country the quality of education is excellent. In recent years the university system has been changing, and this has given it quality and excellence, mainly through research methods. Due to the above, its universities are one of the most recognized worldwide, since it offers different services and research centers, as well as student residences and other areas of interest. On the other hand, Spain has the best business schools, and that is why they are among the first in the world</p>
-                            <p class="text-justify">In Spain, you can find a varied academic offer, this means that according to your academic needs you can choose between different courses. The ease of entry to the university and the recognition of international university degrees is also another great advantage for foreign student</p>
+
+            <!-- Why study in Spain section -->
+            <section id="about-section" class="my-5 pt-5">
+                <div class="container mt-3 pb-5 pt-5">
+                    <div class="my-auto pt-4">
+                        <h2 class="text-center display-4">Why Study in Spain?</h2>
+                        <div class="row my-5 pb-5">
+                            <div>
+                                <div class="d-flex col-md-6">
+                                    <img src="./assets/images/portada-home.jpg" alt="" class="why-img">
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="text-justify">Studying in Spain is ideal for many people, mainly because it is part of an academic destination par excellence. For many Latin Americans, it is a unique and quite beneficial opportunity for cultural learning and also for the social integration and academic success of those who study in this country.</p>
+                                    <p class="text-justify">Studying in this European country is a great advantage that can mainly be summarized in the following various points, such as the fact that in this country the quality of education is excellent. In recent years the university system has been changing, and this has given it quality and excellence, mainly through research methods.</p>
+                                    <p class="text-justify">Due to the above, its universities are one of the most recognized worldwide, since it offers different services and research centers, as well as student residences and other areas of interest. On the other hand, Spain has the best business schools, and that is why they are among the first in the world</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row"></div>
                 </div>
             </section>
+
+            <!-- What to study section -->
             <section id="what-to-section">
-                <div class="container mb-4 my-auto">
+                <div class="container mb-3 my-auto">
                     <h2 class="text-center display-4 mt-2">What to Study in Spain?</h2>
+                    <p class="text-justify">In Spain, you can find a varied academic offer, this means that according to your academic needs you can choose between different courses. The ease of entry to the university and the recognition of international university degrees is also another great advantage for foreign student.</p>
                     <p class="text-center">Theese are the favorites careers for study in Spain</p>
-                    <div class="row d-flex my-5 justify-content-between">
+                    
+                    <!-- Carrers card section -->
+                    <div class="row d-flex my-4 justify-content-between">
+
+                        <!-- Software Engineering Card -->
                         <div class="card-container col-12 col-sm-12 col-md-4">
                             <div class="card">
                                 <img src="./assets/images/software-engineering.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <h6 class="card-title">Software Engineering</h6>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h6 class="card-title">Software Engineering</h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-danger">Read More</a>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Math Card -->
                         <div class="card-container col-12 col-sm-12 col-md-4">
                             <div class="card">
                                 <img src="./assets/images/mathematics-png.jpg" style="height: 10rem;" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <h6 class="card-title">Math</h6>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h6 class="card-title">Math</h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-danger">Read More</a>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Nursing Card -->
                         <div class="card-container col-12 col-sm-12 col-md-4">
                             <div class="card">
                                 <img src="./assets/images/enfermeras.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <h6 class="card-title">Nursing</h6>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h6 class="card-title">Nursing</h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-danger">Read More</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row"></div>
-                </div>
-            </section>
-            <section id="verification-section" class="pt-2">
-                <div class="container">
-                    <h2 class="display-4 text-center mt-2">Want to study in Spain?</h2>
-                    <p class="text-center"> There are some requirements to complete</p>
-                    <div class="col text-center my-3">
-                        <button type="button" class="btn btn-danger mt-1 justify-content-center" data-toggle="modal" data-target="#country-modal">Let´s find out!</button>
-                    </div>
-                    <!-- Modal Bootstrap Template -->
-                    <div class="modal fade" id="country-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
+
+                    <!-- Requirements verification Link -->
+                    <div class="row d-block" id="verification-section">
+                        <h4 class="text-center mt-2">Want to study in Spain? There are some requirements to complete</h4>
+                        <div class="col text-center my-3">
+                            <button type="button" class="btn btn-danger mt-1 justify-content-center" data-toggle="modal" data-target="#country-modal">Let´s find out!</button>
+                        </div>
+                        <!-- Modal Bootstrap Template -->
+                        <div class="modal fade" id="country-modal" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="m4">
+                                        <p>You are going to be redirected to our requirements validation page</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a class="btn btn-danger" target="_blank" href="requirements.html">Get me there!</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="m4">
-                              You are going to be redirected to our requirements validation page
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-danger">Get me there!</button>
-                            </div>
-                          </div>
                         </div>
                     </div>
                 </div>
             </section>
+            
+            <!-- Map Section -->
             <section id="university-locator-section">
                 <div class="container mt-5">
                     <h2 class="text-center display-4">Contact with an University</h2>
-                    <!-- <P class="text-center">Choose an university to see its contact information</P>
-                    <div class="row d-block justify-content-center my-3">
-                        <div class="form-group col-md-6 mx-auto">
-                            <select name="universities-selector" id="universities-selector" class="form-control form-block">
-                                <option value=""></option>
-                            </select>
-                            <button id="search-university" type="submit" class="btn btn-danger mt-1 d-flex mx-auto">Get the Details</button>
-                        </div>
-                    </div> -->
-                    <div class="row justify-content-center mt-5">
-                        
-                        
-                            <div id="map" class="card my-auto"> </div>
-                       
+                    <div class="row justify-content-center mt-5">                     
+                        <!-- Google Map container -->
+                        <div id="map" class="card my-auto"> </div>
                     </div>
-                    <div class="row"></div>
                 </div>
             </section>
+
+            <!-- Contact section -->
             <section id="contact-section" class="">    
                 <div class="container">
-                    <div class="row"></div>
                     <div class="row mt-5 mb-3 justify-content-center"> 
                         <div class="col-md-6 d-flex my-auto">
                             <div class="my-auto">
@@ -162,7 +181,10 @@
                                 <br>
                             </div>
                         </div>
+
+                        <!-- Form Container -->
                         <div class="col-md-6 d-flex justify-content-center my-auto">                            
+                            <!-- Contact Form -->
                             <form class="mt-5 form" >
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" placeholder="Your Name" class="form-control form-block">
@@ -179,6 +201,8 @@
                                 <div class="form-group">
                                     <button type="submit" id="send-message" class="btn btn-danger btn-block">Send</button>
                                 </div>
+
+                                <!-- Notification Container -->
                                 <div id="contact-notification"></div>
                             </form>
                         </div>
@@ -186,18 +210,23 @@
                 </div>
             </section>
         </main>
-        <footer class="text-center bg-light">
-            <div class="">
+
+        <!-- Footer Section -->
+        <footer class="text-center">
+            <div class="mt-4">
                 <p>Developed by Harving Zúniga</p>
                 <p>2020</p>
             </div>
         </footer>
+
         <!-- Adding Scripts  -->
         <!-- jQuery Script -->
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        
         <!-- Bootstrap Script -->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
         <!-- Adding Google Maps API to the Project  -->
         <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbYqP9y8KHdAtJ_ZQge11s_9AiKD16VIw&callback=initMap"> </script>
       

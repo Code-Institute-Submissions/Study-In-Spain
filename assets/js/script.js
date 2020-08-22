@@ -1,5 +1,6 @@
 const search = document.getElementById("search-university")
 const sendButton = document.getElementById("send-message");
+
 // let university = document.getElementById("universities-selector");
 
 // Variables need for send contact form information trough EmailJS
@@ -90,8 +91,8 @@ const universities = [
   },
   {
     name: "Universidad de Castilla-La Mancha",
-    lat:43.472595,
-    lng: -3.795637
+    lat:38.9934873,
+    lng: -3.926504
   },
   {
     name: "Universidad de Burgos",
@@ -377,55 +378,58 @@ const universities = [
   }   
 ];
 
-// This function allows us to send mails trough the contact form using EmailJS service
-function sendMail(){
-    emailjs.send("gmail", "studyinspain", {
-      "email-name": senderName.value,
-      "email-address": senderEmail.value,
-      "email-subject": senderSubject.value,
-      "email-message": senderMessage.value,
-      "email-copy": senderEmail.value
-      })
-      //  If the email is correctly sent, you´ll receive a "success notification" indicating it.
-    .then (function (response){
-      $("#contact-notification").css("visibility", "visible").append(`
-          <div class="alert alert-success" role="alert"> 
-              Your email has been successfully sent, you´ll receive a copy.
-          </div>
-      `);
-      $('form :input').val('');
-      console.log("SUCCESS", response);
-    },
-    //  If the email is correctly sent, you´ll receive a "fail notification" indicating it.
-    function (error){
-      $('#contact-notification').css("visibility", "visible").append(`
-          <div class="alert alert-warning alert-dismissible fade show" role="alert">
-              There is the following error with your request: ${error}.
-              Please, refresh this page or try again later
-          </div>
-      `)
-      console.log("FAILED", error)
-    });
-    return false;
+// Array containing heroslide parameters
+const heroSlide = [
+  {
+    image: "./assets/images/fotowebugr15102019.jpg",
+    title: 'Study in Spain',
+    cta: 'https://www.ugr.es/'
+  },
+  {
+    image:'./assets/images/img2.rtve.es.jpg',
+    title:'Study in Spain2',
+    cta:'https://www.ucm.es'
+  },
+  {
+    image:'./assets/images/Selectividad-Universidades_publicas-Educacion-Reportajes_323230131_87439154_1024x576.jpg',
+    title:'Study in Spain3',
+    cta:'https://www.ucm.es'
+  },
+  {
+    image:'./assets/images/university-madrid.jpg',
+    title:'Study in Spain4',
+    cta: 'http://www.uam.es/UAM/Home.htm?language=en'
+  },
+]
+// Hero slide section
+let currentSlide = 0;
+const heroImage = document.querySelector("#hero-img");
+const heroTitle = document.querySelector("#hero-title");
+const heroCta = document.querySelector("#hero-cta");
+
+function slider (){
+  console.log(currentSlide);
+  if((currentSlide +1) < heroSlide.length) {
+    currentSlide = currentSlide + 1;
+  } else {
+    currentSlide = 0;
+  }
+  console.log(currentSlide);
+  heroImage.setAttribute('src', heroSlide[currentSlide].image);
+  heroTitle.innerHTML = heroSlide[currentSlide].title;
+  heroCta.setAttribute('href', heroSlide[currentSlide].cta);
 }
 
 // Contact with an university section
-// This function appends university name into university selector 
 
-function selectUniversity(){
-    universities.map((university) => {
-        $("#universities-selector").append(`
-            <option value="${university}">${university}</option>
-        `)    
-    });
-}
-
+// This function creates a map element in index.html
 function initMap() {
   let map;
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 40.0778269, lng: -6.0531472},
     zoom: 5,
   });
+  // Creating a Marker for each university in our map.
   for (let i = 0; i < universities.length; i++){
     var marker = new google.maps.Marker({
       position: {lat: universities[i].lat, lng: universities[i].lng},
@@ -435,22 +439,47 @@ function initMap() {
   }
 };
 
-  // universities.map((university) => {
-  //     var marker = new google.maps.Marker({
-  //     position: {lat: parseInt(university.latitude), lng: parseInt(university.longitude),
-  //     map: map,
-  //     title: `${university.name}`,
-  //     }
-  //   });
-  // })
-
+// This function allows us to send mails trough the contact form using EmailJS service
+function sendMail(){
+  emailjs.send("gmail", "studyinspain", {
+    "email-name": senderName.value,
+    "email-address": senderEmail.value,
+    "email-subject": senderSubject.value,
+    "email-message": senderMessage.value,
+    "email-copy": senderEmail.value
+    })
+    //  If the email is correctly sent, you´ll receive a "success notification" indicating it.
+  .then (function (response){
+    $("#contact-notification").css("visibility", "visible").append(`
+        <div class="alert alert-success" role="alert"> 
+            Your email has been successfully sent, you´ll receive a copy.
+        </div>
+    `);
+    $('form :input').val('');
+    console.log("SUCCESS", response);
+  },
+  //  If the email is correctly sent, you´ll receive a "fail notification" indicating it.
+  function (error){
+    $('#contact-notification').css("visibility", "visible").append(`
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            There is the following error with your request: ${error}.
+            Please, refresh this page or try again later
+        </div>
+    `)
+    console.log("FAILED", error)
+  });
+  return false;
+}
 
 // Events 
 
+// Loading functions with indexedDB.html
+window.setInterval(slider, 5000);
+window.addEventListener('load', slider());
+window.addEventListener('load', initMap());
+
+// Send EMail Function will load when sndButton is clicked. 
 sendButton.addEventListener('click', function (){
   event.preventDefault();
   sendMail();
 })
-
-window.addEventListener('load', selectUniversity());
-window.addEventListener('load', initMap());

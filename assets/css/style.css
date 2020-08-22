@@ -9,7 +9,6 @@ body{
     background-color: white;
 }
 
-
 .logo-img{
     width: 4rem;
     height: 4rem;
@@ -24,28 +23,72 @@ h1{
     align-self: center;
 }
 
-/* Footer Styles */
-footer p{
-    margin:0;
-}
 
 /* Hero Section */
-.carousel-item{
-    max-height: 25rem;
+
+#hero-section{
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: white;
+  
 }
+#hero-img-container{
+   
+    position: absolute;
+    z-index: 0;
+}
+
+#hero-img{
+    width:100%;
+    height:30rem;
+    
+}
+
+#hero-info{
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(0, 118, 162, 0.4);
+    width: 100%;
+    height: 91%;
+}
+
+#hero-cta{
+    justify-content: center;
+}
+
+#hero-title{
+    
+    padding-top: 10rem;
+}
+
+#hero-container{
+    box-sizing: content-box;
+    align-items: center;
+    z-index: 1;
+    padding-top:2rem;
+}
+
+
+
+
+.why-img{   
+    width: 100%;
+    height: 100%;
+}
+
 
 #what-to-section{
     min-height: 75vh;
+    background-image: url("../images/dots.png");
+    background-size: cover;
 }
 
 /* About section */
 #about-section{
     min-height: 75vh; 
     background-color: linear-gradient(to right, #950e1c, #ebbb19);
-}
-
-#carouselExampleCaptions{
-    max-height: 30rem;
 }
 
 .card{
@@ -78,8 +121,7 @@ margin:0;
 
 /* Validation Section */
 #verification-section{
-    background-image: url("../images/dots.png");
-    background-size: cover;
+   
 }
 
 /* Contact Section */
@@ -125,9 +167,6 @@ margin:0;
     background-color: #0099b2;
     color: white;
 }
-#countries-container{
-    
-}
 
 .country-code{
     margin:0;
@@ -140,5 +179,13 @@ margin:0;
 }
 
 #map {
-    min-height: 360px;
+    min-height: 75vh;
+    min-width: 100%;
+}
+
+
+
+/* Footer Styles */
+footer p{
+    margin:0;
 }
