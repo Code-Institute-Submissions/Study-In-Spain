@@ -9,6 +9,21 @@ body{
     background-color: white;
 }
 
+
+.logo-img{
+    width: 4rem;
+    height: 4rem;
+}
+
+h1{
+    font-size: 1.5 rem;
+}
+
+.display-3{
+    font-size: 1.5rem;
+    align-self: center;
+}
+
 /* Footer Styles */
 footer p{
     margin:0;
@@ -18,6 +33,7 @@ footer p{
 .carousel-item{
     max-height: 25rem;
 }
+
 #what-to-section{
     min-height: 75vh;
 }

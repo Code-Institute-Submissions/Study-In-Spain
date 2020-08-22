@@ -42,8 +42,7 @@ function getCountries(){
                         </div>  
                     </div>
                     <div class="m4 ml-2">
-                        <p>for ${country.name} You need to homologate you High School degree</p>
-                        <br>
+                        <p>You need to homologate you High School degree <a target="_blank" href="http://www.educacionyfp.gob.es/servicios-al-ciudadano/catalogo/gestion-titulos/estudios-no-universitarios/titulos-extranjeros/homologacion-convalidacion-no-universitarios.html">(More Info)</a></p>
                         <h6><b>What do you need?</b></h6>
                         <ul class="required-documents">
                             <li>Fill this  <a target="_blank" href="http://www.educacionyfp.gob.es/dam/jcr:adca0146-8ff7-4535-adcd-f7beb1ab11f2/solicitud-vf2.pdf">Request Form</li>
@@ -53,11 +52,10 @@ function getCountries(){
                             <li>Certified photocopy of the accrediting certification of the courses taken, stating the subjects followed, the grades obtained and the academic years in which the respective courses were taken.</li>
                         </ul>
                         <h6><b>Where to carry out the procedure?</b></h6>
-                        <p>Embassy of Spain</p>
-                        <p>Spain Consulate</p>
-                        <p>If you are in Spain, you can <a target="_blank" href="http://administracion.gob.es/pagFront/atencionCiudadana/oficinas/encuentraOficina.htm#.VkNuCNIve1t">Look for an Office</a>
-                        <br>
-                        <a target="_blank" href="http://www.educacionyfp.gob.es/servicios-al-ciudadano/catalogo/gestion-titulos/estudios-no-universitarios/titulos-extranjeros/homologacion-convalidacion-no-universitarios.html">More Information</a>
+                        <ul>
+                        <li>Embassy or Spain Consulate</li>
+                        <p>If you are in Spain, you can <a target="_blank" href="http://administracion.gob.es/pagFront/atencionCiudadana/oficinas/encuentraOficina.htm#.VkNuCNIve1t">Look for an Office</a></p>
+                        
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger modal-ok mx-auto" data-dismiss="modal">Acept</button>

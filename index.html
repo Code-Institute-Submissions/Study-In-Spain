@@ -21,7 +21,12 @@
         <header>
             <!-- Bootstrap´s Navbar Template -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <a class="navbar-brand" href="#">Study in Spain</a>
+                <a class="navbar-brand" href="#">
+                    <div class="d-flex align-middle">
+                        <img src="./assets/images/spainlogo.png" alt="logo-spain" class="logo-img">
+                        <h1 class="ml-1 display-3">Study in Spain</h1>
+                    </div> 
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -128,25 +133,20 @@
             <section id="university-locator-section">
                 <div class="container mt-5">
                     <h2 class="text-center display-4">Contact with an University</h2>
-                    <P class="text-center">Choose an university to see its contact information</P>
+                    <!-- <P class="text-center">Choose an university to see its contact information</P>
                     <div class="row d-block justify-content-center my-3">
                         <div class="form-group col-md-6 mx-auto">
-                            <select name="" id="" class="form-control form-block">
-                                <option value="complutense">Universidad Complutense de Madrid</option>
-                                <option value="autonoma-madrid">Universidad Autónoma de Madrid</option>
-                                <option value="barcelona">Universidad de Barcelona</option>
-                                <option value="valencia">Universidad de Valencia</option>
+                            <select name="universities-selector" id="universities-selector" class="form-control form-block">
+                                <option value=""></option>
                             </select>
-                            <button type="submit" class="btn btn-danger mt-1 d-flex mx-auto">Get the Details</button>
+                            <button id="search-university" type="submit" class="btn btn-danger mt-1 d-flex mx-auto">Get the Details</button>
                         </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6 align-middle">
-                            <div id="university-details"></div>
-                        </div>
-                        <div class="col-lg-6">
+                    </div> -->
+                    <div class="row justify-content-center mt-5">
+                        
+                        
                             <div id="map" class="card my-auto"> </div>
-                        </div>
+                       
                     </div>
                     <div class="row"></div>
                 </div>
