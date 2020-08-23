@@ -1,0 +1,174 @@
+# Study in Spain
+
+There are many people who would like to study in Spain due to the immense amount of opportunities that this means for each one; others who have already established ourselves in Spain find ourselves with the need to continue with our university studies.
+
+Study in Spain is a project that allows applicants to study in Spain to know the requirements to fulfill that dream, regardless of the country of origin, you will also be able to know first-hand the most promising careers and geolocate each of the universities in Spain.
+
+Follow this link to [Study in Spain]( https://hfzespinoz4.github.io/Study-In-Spain/)
+
+## UX
+
+### Design
+
+The site has been designed following Mobile First philosophy, also has a clean design that allow user to get focused in the information, the site:
+
+  * Has a responsive navigation menu that allow users to go across all site even if you´re on mobile device or PC.
+  * Has a title in each section that let you know wich section are viewing in that moment.
+  * Use a clean theme that allows users to get focused in what they are looking for.
+
+### Structure
+Study in Spain is structured in the following pages:
+
+  * Main Page:
+  This is the first page that users will see  when visit the website, allows know all information about study in Spain:
+    
+  * What to Study Section Page:
+    * As user you will know the most promising carreers for study in Spain.
+    * As user you will be able to access to requirements page.
+    
+  * Contact University Section:
+    * As user you will be able to geolocate all spanish universities.
+    
+  * Contact Section:
+    * As user you can send me an email requesting information or giving feedback.
+    * As user you will be notified if your email is successfully delivered.
+    * As user you will receive a copy of the email that you send.
+   
+  * Requerimients Page:
+    * As user you will know requirements for study in spain for each country.
+    * As user you will click your country flag and receive all information.
+    
+## Features
+
+### Existing Features
+  * Button based menu that allows user to navigate through all site.
+  * Contact form that allow user to send me an email or feedback.
+  * Geolocation of all Spanish universities.
+  * Hover effects that allow users to know what country are they clicking on.
+
+### Features Left
+  * Allow user to select an university and see it contact details.
+  * Allow user to geolocate an embassy or spanish consulate in their country.
+  * Allow user to directly contact a selected university through the website.
+
+## Used Technologies
+
+Marvel Search Tools was developed using the following technologies:
+
+  * [REST Countries API] (https://restcountries.eu/)
+    * As source of all Countries information such as name, AlphaCode, Native Language Marvel characters, comics, series and events information.
+  * [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview)
+    * As source to geolocate all spanish universities.
+  * [HTML5](https://en.wikipedia.org/wiki/HTML) 
+    * As markup language for web design.
+  * [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+    * As style sheet laguage, used for describing the website style and presentation.
+  * [Bootstrap 4](https://getbootstrap.com/)
+    * For quicky design and customize as responsive mobile-first website.
+  * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    * For give functionallity and make it user-interactive.
+  * [jQuery] (https://jquery.com/)
+    * As javascript library for html document manipulation and event handling.
+  * [EmailJS](https://www.emailjs.com/)
+    * Allows to send email directly from contact page.
+  * [GIT](https://git-scm.com/)
+    * As version control system.
+  * [GitHub] (https://github.com)
+    * For hosting repository
+  * [GitHub Pages](https://pages.github.com/)
+    * For hosting and deploying the website.
+  
+ Also use the following tools:
+ 
+ * [Visual Studio Code](https://code.visualstudio.com/)
+    * As Integrated Development Environment (IDE).
+    
+## Testing
+
+To ensure a successfull user experience in the website I´ve done test in the following browsers:
+  * Google Chrome.
+  * Mozilla Firefox.
+  * Microsoft Edge (Chromium Based Version).
+  * Internet Explorer 11.
+ 
+ *I was not able to run test on safari bacause I don´t have an Apple Device.
+  
+ Also made a simulation of the following devices in each browser using the Developer Tools:
+  * Samsung Galaxy 5 (Android 5.0).
+  * Samsung S9/S9+ (Android 7.0).
+  * iPad.
+  * iPhone 6/7/8 (iOS 11).
+  * iPhone 6/7/8  Plus (iOS 11).
+  * iPhone X/XS (iOS 12).
+  * Kindle Fire HDX Linux.
+
+## Deployment
+
+### Using Google Maps JavaScript API
+  * All information in [Google Developers Site] (https://developers.google.com/maps/documentation/javascript/overview)
+
+### How I hosted the website
+
+The project was deployed using Github Pages, the [URL](https://hfzespinoz4.github.io/MS1Project/) is automatic generated by GitHub and local deployment was not necesary in this case.
+
+These are the steps for hosting a site or project with GitHub Pages:
+
+  1. Select the settings option from the menu item in the top ob the repository page.
+  2. Scroll down to GitHubPages Option
+  3. On the source dropdown menu select "Master Branch"
+  4. The page will automatically refresh and the website is available now
+  5. Copy the URL generated to access the deployed website or project.
+  
+### How to locally set the website
+
+If you are wondering to locally set the website, you may follow this steps:
+
+  1. Go to the repository on GitHub.
+  2. Click on the "Clone or Download Button" under de repository name and in the right of the screen.
+  3. Copy the URL in the Clone with HTTP Section.
+  4. In your local computer open a Git Bash and go to a empty or new folder, here the project will be cloned.
+  5. Type git clone and paste the URL that you copied in the step 2.
+  6. Press enter to create your clone of this project.
+
+If you need more information about how to cloning repositories fell free to visit the [GitHub Help](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+## Credits
+
+This Project is inspired on:
+
+  * [Country Flags API] (https://www.countryflags.io/)
+ 
+## Media and Information:
+
+  ### Media
+  
+  * [Countries Flags] (https://restcountries.eu/)
+    * Provided by REST Country API
+  
+  * [Slider Image] (https://img2.rtve.es/i/?w=1600&i=1471599947696.jpg)
+    * Property of RTVE
+    
+  * [Slider Image](https://www.ugr.es/)
+    * Property of University of Granada
+    
+  * [Slider Image](https://www.elespanol.com/reportajes/20180718/carreras-universitarias-preferidas-notas-corte-altas/323218620_0.html)
+    * Property of Elespanol.com
+    
+  * [Slider Image](https://www.uam.es/ss/Satellite/es/1242649910548/1242673409956/noticia/noticia/La_Plaza_Mayor_de_la_Universidad_Autonoma_de_Madrid_ha_sido_galardonada_con_el_Primer_Premio_que_oto.htm)
+    * Property of Autonomous University of Madrid
+    
+  * [Spain Logo] (https://www.tourinews.es/opinion/el-dia-joan-miro-me-regalo-logo-espana_4461321_102.html)
+    *I got it from tourinews.es
+    
+  ### Animations
+  * [Scroll Reveall] (https://scrollrevealjs.org/)  
+    * Is the author of Scroll reveal effect used on Main Page.
+
+### Acknowledgment
+
+I would like to acknowledge to the following persons:
+
+  * God, my father. He give me the inspiration and the ability to do this.
+  * Diego, my little son. He is my motivation and my strength.
+  * Irlanda, my wife. She took care of everything so I could focus on the project.
+  * Precious Ijege, my mentor. He guide me through this project.
