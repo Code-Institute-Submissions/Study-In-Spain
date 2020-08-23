@@ -16,365 +16,365 @@ const APIKey = "AIzaSyDbYqP9y8KHdAtJ_ZQge11s_9AiKD16VIw";
 const universities = [
   {
     name: "Universidad de Almería",
-    lat: 36.828992,
-    lng: -2.406031
+    lat: 36.8290435,
+    lng: -2.4085415
   },
   {
     name: "Universidad de Cádiz",
-    lat: 36.595673,
-    lng: -5.682514
+    lat: 36.5376145,
+    lng: -6.3026846
   },
   {
     name: "Universidad de Granada",
-    lat: 37.881641,
-    lng: -4.779391
+    lat: 37.1727607,
+    lng: -3.6254233
   },
   {
     name: "Universidad de Huelva",
-    lat: 37.184915,
-    lng: -3.609459
+    lat: 37.2703746,
+    lng: -6.9252031
   },
   {
     name: "Universidad Internacional de Andalucía",
-    lat: 37.270443,
-    lng: -6.922918
+    lat: 37.3985668,
+    lng: -6.0108777
   },
   {
     name: "Universidad de Jaén",
-    lat: 37.398771,
-    lng: -6.008657
+    lat: 37.788533,
+    lng: -3.777665
   },
   {
     name: "Universidad de Málaga",
-    lat: 37.788533,
-    lng:-3.777665
+    lat: 36.720448,
+    lng:-4.416075
   },
   {
     name: "Universidad Pablo de Olavide",
-    lat: 36.720448,
-    lng: -4.416075
+    lat: 37.3552405,
+    lng: -5.9395928
   },
   {
     name: "Universidad de Sevilla",
-    lat: 37.355087,
-    lng:-5.937286
+    lat: 37.3807579,
+    lng:-5.9934194
   },
   {
     name: "Universidad de Zaragoza",
-    lat: 37.380826,
-    lng: -5.991585
+    lat: 41.6420639,
+    lng: -0.9036952
   },
   {
     name: "Universidad San Jorge",
-    lat: 41.642076,
-    lng: -0.901477
+    lat: 41.7562122,
+    lng: -0.8361195
   },
   {
     name: "Universidad de La Laguna",
-    lat: 41.756228,
-    lng: -0.833770
+    lat: 28.4810934,
+    lng: -16.3180308
   },
   {
     name: "Universidad de Las Palmas de Gran Canaria",
-    lat:28.481197,
-    lng: -16.316014
+    lat:28.0991889,
+    lng: -15.4221074
   },
   {
     name: "Universidad de Cantabria",
-    lat:28.099415,
-    lng: -15.419915
+    lat:43.4717039,
+    lng: -3.8041625
   },
   {
     name: "Universidad Internacional Menéndez Pelayo UIMP",
-    lat:43.471831,
-    lng: -3.801610
+    lat:43.4724469,
+    lng: -3.7978149
   },
   {
     name: "Universidad de Castilla-La Mancha",
-    lat:38.9934873,
-    lng: -3.926504
+    lat:38.9934998,
+    lng: -3.9276252
   },
   {
     name: "Universidad de Burgos",
-    lat:38.993566,
-    lng: -3.925555
+    lat:42.34088,
+    lng: -3.7296287
   },
   {
     name: "Universidad Católica de Ávila",
-    lat:42.340882,
-    lng: -3.727445
+    lat:40.66687,
+    lng: -4.7070727
   },
   {
     name: "Universidad Europea Miguel de Cervantes",
-    lat:40.066935,
-    lng: -4.704830
+    lat:41.625981,
+    lng: -4.7177047
   },
   {
     name: "IE Universidad",
-    lat:41.625961,
-    lng: -4.715527
+    lat:40.9528852,
+    lng: -4.1210251
   },
   {
     name: "Universidad de León",
-    lat: 40.952884,
-    lng: -4.118825 
+    lat: 42.5942855,
+    lng: -5.5699503
   },
   {
     name: "Universidad Pontificia de Salamanca",
-    lat: 42.594308,
-    lng: -5.561161
+    lat: 40.9631352,
+    lng: -5.6690981
   },
   {
     name: "Universidad de Salamanca",
-    lat: 40.963124,
-    lng: -5.666946
+    lat: 40.9613376,
+    lng: -5.6691138
   },
   {
     name: "Universidad de Valladolid",
-    lat:40.961394 ,
-    lng: -5.667030
+    lat: 41.6569271 ,
+    lng: -4.7162434
   },
   {
     name: "Universitat Abat Oliba CEU",
-    lat: 41.656928,
-    lng: -4.714060
+    lat: 41.409934,
+    lng: 2.1241903
   },
   {
     name:"Universidad Autónoma de Barcelona",
-    lat:41.409945,
-    lng: 2.126404 
+    lat:41.5020282,
+    lng: 2.1024979
   },
   {
     name: "Universidad de Barcelona",
-    lat: 41.502071,
-    lng: 2.104733 
+    lat: 41.3866167,
+    lng: 2.1617593 
   },
   {
     name: "Universidad de Girona",
-    lat: 41.386629,
-    lng: 2.163935
+    lat: 41.9857028,
+    lng: 2.8250124
   },
   {
     name: "Universidad Internacional de Cataluña",
-    lat: 41.985701,
-    lng: 2.827164
+    lat: 41.405983,
+    lng: 2.1212568
   },
   {
     name: "Universitat de Lleida",
-    lat:41.406011,
-    lng: 2.123503
+    lat:41.6147654,
+    lng: 0.617428
   },
   {
     name: "Universitat Oberta de Catalunya",
-    lat: 41.614816,
-    lng: 0.619713
+    lat: 41.4065636,
+    lng: 2.1923929
   },
   {
     name: "Universidad Pompeu Fabra",
-    lat: 41.406580,
-    lng: 2.194544 
+    lat: 41.3789955,
+    lng: 2.177447
   },
   {
     name: "Universidad Ramón Llull",
-    lat:41.379021,
-    lng: 2.179670
+    lat:41.411921,
+    lng: 2.1137105
   },
   {
     name: "Universidad Rovira i Virgili",
-    lat: 41.411930,
-    lng: 2.131236
+    lat: 40.9867591,
+    lng: 0.6107252
   },
   {
     name: "Universidad de Vic",
-    lat: 41.119667,
-    lng: 1.260524
+    lat: 41.9337609,
+    lng: 2.2450932
   },
   {
     name: "Universidad Alfonso X El Sabio",
-    lat:41.933723,
-    lng: 2.247245
+    lat:40.465405,
+    lng: -3.6790474
   },
 
   {
     name: "Universidad de Alcalá",
-    lat:40.465419,
-    lng: -3.676813
+    lat:40.4824722,
+    lng: -3.3650561
   },
   {
     name: "Universidad Antonio de Nebrija",
-    lat:40.482485,
-    lng: -3.362866
+    lat:40.4295038,
+    lng: -3.7152578
   },
   {
     name: "Universidad Autónoma de Madrid",
-    lat: 40.429616,
-    lng:-3.713067
+    lat: 40.5466983,
+    lng:-3.6965506
   },
   {
     name: "Universidad Camilo José Cela",
-    lat:40.546703,
-    lng: -3.694348
+    lat:40.472508,
+    lng: -3.9425317
   },
   {
     name: "Universidad Carlos III de Madrid",
-    lat:40.472519,
-    lng: -3.940374
+    lat:40.3289083,
+    lng: -3.7535093
   },
   {
     name: "Universidad Complutense de Madrid",
-    lat:40.332481,
-    lng: -3.765112
+    lat:40.4454368,
+    lng: -3.7321311
   },
   {
     name: "Universidad a Distancia de Madrid",
-    lat: 40.445265,
-    lng: -3.729824
+    lat: 40.6314045,
+    lng: -4.0012371
   },
   {
     name:"Universidad Europea de Madrid",
-    lat:40.631408,
-    lng: -3.999020
+    lat:40.3730607,
+    lng: -3.9212715
   },
   {
     name: "Universidad Francisco de Vitoria",
-    lat:40.373130,
-    lng: -3.919195
+    lat:40.4412685,
+    lng: -3.8367478
   },
   {
     name: "Universidad Nacional de Educación a Distancia U.N.E.D",
-    lat:40.441221,
-    lng:-3.834552
+    lat:40.4380164,
+    lng:-3.7062415
   },
   {
     name:"Universidad Politécnica de Madrid",
-    lat:40.438004,
-    lng: -30704073
+    lat:40.4486372,
+    lng: -3.7214685
   },
   {
     name: "Universidad Pontificia Comillas",
-    lat:40.448696,
-    lng: -3.719317
+    lat:40.4295293,
+    lng: -3.7136078
   },
   {
     name: "Universidad Rey Juan Carlos",
-    lat:40.4292198,
-    lng: -3.711859
+    lat:40.3357969,
+    lng: -3.8790723
   },
   {
     name:"Universidad San Pablo C.E.U.",
-    lat: 40.335707,
-    lng: -3.876884
+    lat: 40.4426616,
+    lng: -3.7198941
   },
   {
     name: "Universidad de Navarra",
-    lat:40.4423422,
-    lng: -3.7189129
+    lat:42.8014918,
+    lng: -1.7297744
   },
 
   {
     name:"Universidad Pública de Navarra",
-    lat:42.8015382,
-    lng: -1.6598362
-  },
-  {
-    name: "Universidad de Alicante", 
     lat:42.8005243,
     lng: -1.6389523
   },
   {
-    name: "Universitat Jaume I de Castellón",
+    name: "Universidad de Alicante", 
     lat:38.3852446,
     lng: -0.5165048
   },
   {
-    name: "Universidad Miguel Hernández de Elche",
+    name: "Universitat Jaume I de Castellón",
     lat:39.9945711,
     lng: -0.071089
   },
   {
-    name: "Universidad Politécnica de Valéncia",
+    name: "Universidad Miguel Hernández de Elche",
     lat:38.274814,
-    lng: -0.6846265
+    lng: -0.6861645
+  },
+  {
+    name: "Universidad Politécnica de Valéncia",
+    lat:39.4807985,
+    lng:-0.3428186
   },
   {
     name: "Universitat de València",
-    lat: 39.4807985,
-    lng: -0.3428186 
+    lat: 39.4793254,
+    lng: -0.361575
   },
   {
     name: "Universidad Cardenal Herrera - CEU",
-    lat: 39.4793254,
-    lng: -0.3615465
-  },
-  {
-    name: "Universidad Católica de Valencia S. Vicente M.",
     lat: 39.547283,
     lng: -0.3889937
   },
   {
-    name: "Universidad de Extremadura",
-    lat:39.47024,
+    name: "Universidad Católica de Valencia S. Vicente M.",
+    lat: 39.47024,
     lng: -0.3826548
   },
   {
-    name:"Universidad de A Coruña",
+    name: "Universidad de Extremadura",
     lat:38.8834507,
-    lng: -7.0074564
+    lng: -7.0074847
+  },
+  {
+    name:"Universidad de A Coruña",
+    lat:43.3521822,
+    lng: -8.4226314
   },
   {
     name: "Universidad de Santiago de Compostela",
-    lat:43.3193449,
-    lng: -8.394845
+    lat:42.8885225,
+    lng: -8.5471613
   },
   {
     name: "Universidade de Vigo",
-    lat:42.8885225,
-    lng: -8.5471613 
-  },
-  {
-    name: "Universitat de las Illes Balears",
     lat:42.1697632,
     lng: -8.6867671
   },
   {
+    name: "Universitat de las Illes Balears",
+    lat:39.6242222,
+    lng: 2.6276033
+  },
+  {
     name: "Universidad de La Rioja",
-    lat:39.641222,
-    lng: 2.6433703
+    lat:42.4649339,
+    lng: 2.4266107
   },
   {
     name: "Universidad Mondragon Unibertsitatea",
-    lat: 42.4649339,
-    lng: -2.4266107
+    lat: 43.0512578,
+    lng: -2.5099446
   },
   {
     name: "Universidad de Deusto",
-    lat:43.0512568,
-    lng: -2.5187638
+    lat:43.290342,
+    lng: -2.7381041
   },
   {
     name: "Universidad del País Vasco",
-    lat:43.2715634,
-    lng: -2.9413362
+    lat:43.2553174,
+    lng: -2.7500779
   },
   {
     name:  "Universidad de Oviedo",
-    lat: 43.3314059,
-    lng: -2.9793605
-  },
-  {
-    name: "Universidad Politécnica de Cartagena",
     lat: 43.3617481,
     lng: -5.8484669
   },
   {
-    name: "Universidad Católica San Antonio de Murcia",
-    lat:37.6019241,
+    name: "Universidad Politécnica de Cartagena",
+    lat: 37.6019241,
     lng: -0.9828
   },
   {
+    name: "Universidad Católica San Antonio de Murcia",
+    lat:37.9914675,
+    lng: -1.1876643
+  },
+  {
     name: "Universidad de Murcia",
-    lat: 37.9874348,
-    lng: -1.144788
+    lat: 38.018751,
+    lng: -1.1715687
   }   
 ];
 
@@ -382,22 +382,22 @@ const universities = [
 const heroSlide = [
   {
     image: "./assets/images/fotowebugr15102019.jpg",
-    title: 'Study in Spain',
-    cta: 'https://www.ugr.es/'
+    title: 'Polytechnic University',
+    cta: 'https://www.upm.es/'
   },
   {
     image:'./assets/images/img2.rtve.es.jpg',
-    title:'Study in Spain2',
-    cta:'https://www.ucm.es'
+    title:'University Of Granada',
+    cta:'https://www.ugr.es'
   },
   {
     image:'./assets/images/Selectividad-Universidades_publicas-Educacion-Reportajes_323230131_87439154_1024x576.jpg',
-    title:'Study in Spain3',
+    title:'Complutense University',
     cta:'https://www.ucm.es'
   },
   {
     image:'./assets/images/university-madrid.jpg',
-    title:'Study in Spain4',
+    title:'Autonomous University of Madrid',
     cta: 'http://www.uam.es/UAM/Home.htm?language=en'
   },
 ]
@@ -473,7 +473,7 @@ function sendMail(){
 
 // Events 
 
-// Loading functions with indexedDB.html
+// Loading functions with index.html
 window.setInterval(slider, 5000);
 window.addEventListener('load', slider());
 window.addEventListener('load', initMap());

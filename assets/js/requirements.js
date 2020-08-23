@@ -1,15 +1,18 @@
 
-
+// This function allow us to get countries information from restcountries API
 function getCountries(){
     // Getting countries information
     fetch (`https://restcountries.eu/rest/v2/all`)
+    
     .then (response => {
         if (!response.ok){
             throw Error (`Exception ${response.status}`);
         }
         return response.json();
     })
+    // if API response is OK:
     .then (data => countriesInfo(data))
+    // IF an error happens:
     .catch(error => {
         $("#error-notification").append(`${error}`);
     });
@@ -17,7 +20,10 @@ function getCountries(){
     
     //Parsing response for beign displayed
     function countriesInfo(data){
+        // creating each single country element:
         data.map((country) =>{
+
+            // Appends country information to container
             $("#countries-container").append(`
                 <div id=${country.alpha2Code} class="country card col-sm-2 btn" data-toggle="modal" data-target="#validator-modal">
                     <div class="d-block my-auto">
@@ -27,8 +33,13 @@ function getCountries(){
                     </div>
                 </div>
             `)
+
+            // When clicking on a country an alert element will appear on screen with requerimients for that especific country
             $(`#${country.alpha2Code}`).click(function(){
+                // Cleaning container before append content
                 $(`#modal-validator-content`).html("");
+
+                // Append content to alert 
                 $(`#modal-validator-content`).append(`
                     <div class="modal-header d-block ">
                         <div>
@@ -36,6 +47,7 @@ function getCountries(){
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
+                        
                         <div class="d-flex justify-content-center">
                             <img class="country-flag" src=${country.flag}>
                             <h3 class="modal-tittle ml-2 align-middle" id="">${country.name}</h3>
@@ -60,10 +72,14 @@ function getCountries(){
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger modal-ok mx-auto" data-dismiss="modal">Acept</button>
                     </div>`);
+
+                // If country language is diferent than spanish this will append a translation Request, this is obtained from restcountries API
                 if (`${country.languages[0].name}` !== "Spanish"){
                     $(".required-documents").append(`
                         <li>Official translation by a sworn translator, duly authorized or registered in Spain</li>
                     `)};
+
+                // If a country doesn´t belong to European Union this will appends a legalization or apostille requirement this is obtained from rescountries API
                 if (`${country.regionalBlocs[0].name}` !== "European Union"){
                     $(".required-documents").append(`
                         <li>Legalization or "apostille" issued by the competent authorities of the country <a href="http://www.hcch.net/index_es.php?act=conventions.authorities&cid=41">(see apostille signataries countries)</a></li>
@@ -74,4 +90,7 @@ function getCountries(){
     };
 };
 
-$(document).ready(getCountries())
+
+// Events
+// Loading get Countries function 
+window.addEventListener('load', getCountries());
