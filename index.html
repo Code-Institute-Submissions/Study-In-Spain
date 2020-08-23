@@ -15,6 +15,8 @@
             emailjs.init("user_7yFD4CIEwOv4SbZYl3FfL");
             })();
         </script>
+        <!-- Adding Scroll Reveal to the Project -->
+        <script src="https://unpkg.com/scrollreveal"></script>
         <title>Study In Spain</title>
     </head>
     <body>
@@ -37,10 +39,10 @@
                 <!-- Navigation bar -->
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto">
-                        <a class="nav-link" href="#about-section">Why Study</a>
-                        <a class="nav-link" href="#what-to-section">What to Study</a>
+                        <a class="nav-link" href="#why-to-title">Why Study</a>
+                        <a class="nav-link" href="#what-to-title">What to Study</a>
                         <a class="nav-link" href="./requirements.html" target="_blank">Requirements</a>
-                        <a class="nav-link" href="#university-locator-section">Universities</a>
+                        <a class="nav-link" href="#university-locator-title">Universities</a>
                         <a class="nav-link" href="#contact-section">Contact</a>
                     </div>
                 </div>
@@ -67,12 +69,12 @@
             <section id="about-section" class="my-5 pt-5">
                 <div class="container mt-3 pb-5 pt-5">
                     <div class="my-auto pt-4">
-                        <h2 class="text-center display-4">Why Study in Spain?</h2>
+                        <h2 class="text-center display-4" id="why-to-title">Why Study in Spain?</h2>
                         <div class="row my-5 pb-5 d-flex">
-                            <div class="col-md-6">
-                                <img src="./assets/images/portada-home.jpg" alt="" class="why-img">
+                            <div class="col-md-6" id="why-img-container">
+                                <img src="./assets/images/portada-home.jpg" alt="students in Spain" class="why-img">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 why-text">
                                 <p class="text-justify">Studying in Spain is ideal for many people, mainly because it is part of an academic destination par excellence. For many Latin Americans, it is a unique and quite beneficial opportunity for cultural learning and also for the social integration and academic success of those who study in this country.</p>
                                 <p class="text-justify">Studying in this European country is a great advantage that can mainly be summarized in the following various points, such as the fact that in this country the quality of education is excellent. In recent years the university system has been changing, and this has given it quality and excellence, mainly through research methods.</p>
                                 <p class="text-justify">Due to the above, its universities are one of the most recognized worldwide, since it offers different services and research centers, as well as student residences and other areas of interest. On the other hand, Spain has the best business schools, and that is why they are among the first in the world</p>
@@ -85,9 +87,8 @@
             <!-- What to study section -->
             <section id="what-to-section">
                 <div class="container mb-3 my-auto">
-                    <h2 class="text-center display-4 mt-2">What to Study in Spain?</h2>
+                    <h2 class="text-center display-4 mt-2" id="what-to-title">What to Study in Spain?</h2>
                     <p class="text-justify">In Spain, you can find a varied academic offer, this means that according to your academic needs you can choose between different courses. The ease of entry to the university and the recognition of international university degrees is also another great advantage for foreign student.</p>
-                    <p class="text-center">Theese are the favorites careers for study in Spain</p>
                     
                     <!-- Carrers card section -->
                     <div class="row d-flex my-4 justify-content-between">
@@ -160,10 +161,12 @@
             <!-- Map Section -->
             <section id="university-locator-section">
                 <div class="container mt-5">
-                    <h2 class="text-center display-4">Contact with an University</h2>
+                    <div class="row">
+                        <h2 class=" d-flex mx-auto text-center display-4 pb-5" id="university-locator-title">Contact with an University</h2>
+                    </div>
                     <div class="row justify-content-center mt-5">                     
                         <!-- Google Map container -->
-                        <div id="map" class="card my-auto"> </div>
+                        <div id="map" class="col-sm-12 d-block"> </div>
                     </div>
                 </div>
             </section>

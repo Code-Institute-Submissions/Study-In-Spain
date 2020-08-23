@@ -471,6 +471,89 @@ function sendMail(){
   return false;
 }
 
+// Scroll Reveal Scripts
+window.sr = ScrollReveal();
+
+sr.reveal('.navbar', {
+  duration: 2000,
+  origin: 'top'
+});
+
+sr.reveal('#hero-section', {
+  duration: 2000,
+  origin: 'bottom',
+  distance: '300px'
+});
+
+sr.reveal('#why-to-title', {
+  duration: 2000,
+  origin: 'right'
+});
+
+sr.reveal('#why-img-container', {
+  duration: 2000,
+  origin: 'left',
+  distance: '200px'
+});
+
+sr.reveal('.why-text', {
+  duration: 2000,
+  origin: 'bottom',
+  distance: '300px'
+});
+
+sr.reveal('#what-to-section', {
+  duration: 2000,
+  origin: 'bottom',
+  distance: '300px'
+});
+
+sr.reveal('.card', {
+  duration: 2000,
+  origin: 'right',
+  distance: '300px',
+});
+
+sr.reveal('#university-locator-title', {
+  duration: 2000,
+  origin: 'top',
+  distance: '300px'
+});
+
+sr.reveal('#map', {
+  duration: 2000,
+  origin: 'bottom',
+  distance: '300px'
+});
+
+sr.reveal('#contact-title', {
+  duration: 2000,
+  origin: 'left',
+  distance: '300px'
+});
+
+sr.reveal('#contact-subtitle', {
+  duration: 2000,
+  origin: 'left',
+  distance: '300px'
+});
+
+sr.reveal('.form-group', {
+  duration: 2000,
+  origin: 'right',
+  distance: '300px'
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
 // Events 
 
 // Loading functions with index.html
